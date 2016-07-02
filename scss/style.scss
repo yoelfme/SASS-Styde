@@ -1,5 +1,8 @@
 $text: #444;
-$font-family: "Helvetica", sans-serif;
+$font-family: 'Helvetica', sans-serif;
+
+@import 'variables';
+@import 'layout';
 
 body {
     color: $text;
@@ -14,6 +17,7 @@ h1 {
     font-size: 2em;
     line-height: 1.2em;
     margin: 1em 0;
+    color: $title;
 }
 
 h2 {
@@ -24,4 +28,11 @@ h2 {
 
 p {
     margin: 0 0 1em 0;
+}
+
+blockquote {
+    margin: 0 0 20px 0;
+    p {
+        margin: 0;
+    }
 }
